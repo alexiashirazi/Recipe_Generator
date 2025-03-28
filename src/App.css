@@ -1,0 +1,224 @@
+.App-button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #064e36;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.App-button:hover {
+  background-color: #0e856f;
+}
+
+.App {
+  text-align: center;
+  background-image: url('./assets/images/background.jpg'); /* Calea relativă */
+  background-size: cover; /* Imaginea se întinde să acopere tot containerul */
+  background-position: center; /* Centrează imaginea */
+  background-repeat: repeat; /* Previne repetarea imaginii */
+  min-height: 100vh; /* Asigură că fundalul acoperă întreaga înălțime */
+}
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transform: translateY(150px); /* Mută conținutul cu 20px mai sus */
+}
+
+.App-header p{
+  
+  margin-top: 10px; /* Distanță între titlu și restul conținutului */
+}
+.App-header h1 {
+  
+  margin-bottom: 0px; /* Distanță între titlu și restul conținutului */
+}
+
+
+
+/* General styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Home Page Container */
+.home-container {
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: -10px;
+
+}
+
+/* Navbar Styling */
+.home-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4caf50;
+  padding: 20px 50px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 65px;
+}
+
+.nav-button {
+  background-color: #fff;
+  color: #4caf50;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #388e3c;
+  color: white;
+}
+
+/* Hero Section */
+.home-header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.home-header span {
+  color: #4caf50;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: auto;
+}
+
+.home-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #388e3c;
+}
+
+/* Recipe Section */
+.recipe-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.recipe-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Recipe Grid */
+.recipe-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-height: 700px;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  max-width: 300px;  /* Adjust card width */
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Ensures elements are stacked vertically */
+  justify-content: space-between;
+  height: 100%; /* Ensures card stretches to fit content */
+  min-height: 365px
+}
+
+/* Recipe Card Image */
+.recipe-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Title Styling */
+.recipe-card h3 {
+  color: #333;
+  margin: 15px 0 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Description Styling */
+.recipe-card p {
+  color: #666;
+  font-size: 1rem;
+  flex-grow: 1; /* Allows the description to expand */
+  word-wrap: break-word;
+}
+
+/* Button Styling */
+.read-more-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.read-more-btn:hover {
+  background: #388e3c;
+}
+
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  background: #333;
+  color: white;
+  border-radius: 10px;
+}

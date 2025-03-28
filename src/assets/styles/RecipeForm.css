@@ -1,0 +1,134 @@
+/* General container styling */
+.recipe-form-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 15px;
+  background: #f9f9f9;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Title styling */
+.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Form input styling */
+.ingredients-input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  resize: none;
+  min-height: 100px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.ingredients-input:focus {
+  border-color: #388e3c;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.4);
+}
+
+/* Submit button styling */
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #388e3c;
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Recipes container */
+.recipes-container {
+  margin-top: 40px;
+}
+
+.recipes-container h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Recipes grid layout */
+.recipes-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Individual recipe card */
+.recipe-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Recipe image */
+.recipe-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Recipe title */
+.recipe-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .recipe-form-container {
+    padding: 20px;
+  }
+
+  .recipes-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recipe-card {
+    max-width: 100%;
+  }
+}

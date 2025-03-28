@@ -1,0 +1,8 @@
+.Dashboard {
+    text-align: center;
+    background-image: url('../images/background.jpg'); /* Fundal imagine */
+    background-size: cover; /* Imaginea se întinde să acopere tot containerul */
+    background-position: center; /* Centrează imaginea */
+    background-repeat: no-repeat; /* Previne repetarea imaginii */
+    min-height: 100vh; /* Asigură că fundalul acoperă întreaga înălțime */
+  }

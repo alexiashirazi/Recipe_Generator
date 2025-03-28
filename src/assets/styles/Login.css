@@ -1,0 +1,141 @@
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.spinner {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-top: 3px solid #04413c; /* Verde pentru spinner */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('../images/background.jpg'); /* Fundal imagine */
+  background-size: cover; /* Imaginea acoperă tot ecranul */
+  background-position: center; /* Centrează imaginea */
+  background-repeat: no-repeat;
+  height: 100vh; /* Înălțime completă */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Mută conținutul mai sus */
+  padding-top: 50px; /* Spațiu între conținut și marginea de sus */
+}
+
+/* Container general pentru pagina de login */
+.login-container {
+  display: flex;
+  flex-direction: column; /* Organizează elementele pe verticală */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px; /* Dimensiune fixă pentru card */
+  background-color: rgba(255, 255, 255, 0.9); /* Fundal alb translucid */
+  padding: 30px; /* Spațiu intern */
+  border-radius: 10px; /* Colțuri rotunjite */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Umbră subtilă */
+  overflow: hidden; /* Ascunde eventualele depășiri */
+}
+
+.login-card h1 {
+  color: #04413c; /* Verde pentru titlu */
+  font-size: 1.8rem;
+  margin-bottom: 20px; /* Distanță între titlu și subtitlu */
+  text-align: center;
+}
+
+.login-card p {
+  font-size: 1rem;
+  color: #333; /* Subtil pentru subtitlu */
+  text-align: center;
+  margin-bottom: 20px; /* Spațiu între subtitlu și formular */
+}
+
+/* Stilizare formular */
+form {
+  width: 100%; /* Lățime completă */
+  display: flex;
+  flex-direction: column; /* Elemente pe verticală */
+  gap: 15px; /* Spațiu uniform între câmpuri */
+}
+
+.form-group {
+  width: 100%; /* Asigură lățimea completă */
+  display: flex;
+  flex-direction: column; /* Elemente pe verticală */
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #064635; /* Verde pentru label-uri */
+  margin-bottom: 5px; /* Spațiu între label și input */
+}
+
+.form-group input {
+  width: 95%; /* Câmpurile sunt puțin mai lungi */
+  padding: 10px; /* Spațiu intern */
+  font-size: 14px;
+  border: 1px solid #ccc; /* Margine subtilă */
+  border-radius: 5px; /* Colțuri rotunjite */
+  box-sizing: border-box; /* Include padding în dimensiunea totală */
+  margin: 0 auto; /* Centrează câmpurile în interiorul containerului */
+}
+
+.form-group input:focus {
+  border-color: #17c66e; /* Verde la focus */
+  outline: none; /* Elimină bordura implicită */
+  box-shadow: 0 0 5px rgba(23, 198, 110, 0.5); /* Umbră subtilă */
+}
+
+/* Buton de conectare */
+.login-button {
+  width: 50%; /* Buton mai scurt */
+  padding: 12px; /* Spațiu intern */
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* Text alb */
+  background-color: #04413c; /* Verde închis */
+  border: none;
+  border-radius: 5px; /* Colțuri rotunjite */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Animație la hover */
+  margin: 0 auto; /* Centrează butonul */
+}
+
+.login-button:hover {
+  background-color: #17c66e; /* Verde deschis */
+}
+
+/* Link pentru înregistrare */
+.register-link {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+.register-link a {
+  color: #064635; /* Verde pentru link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}

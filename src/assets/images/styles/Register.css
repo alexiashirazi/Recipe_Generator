@@ -1,0 +1,72 @@
+form {
+    display: flex;
+    flex-direction: column; /* Organizează elementele pe verticală */
+    align-items: flex-start; /* Aliniază textul în partea stângă */
+    gap: 15px; /* Adaugă spațiu între elemente */
+    width: 100%; /* Ajustează lățimea formularului */
+    max-width: 300px; /* Oferă o dimensiune maximă */
+    margin: auto; /* Centrează formularul pe pagină */
+  }
+  
+  form div {
+    display: flex;
+    flex-direction: column; /* Fiecare câmp are un label și un input organizate pe verticală */
+    width: 100%; /* Lățimea completă pentru fiecare div */
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(4, 55, 21); /* Ajustează culoarea textului pentru vizibilitate */
+    margin-bottom: 5px; /* Adaugă spațiu între label și input */
+  }
+  
+  input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; 
+    max-width: 400px;
+    box-sizing: bold;
+  }
+  
+  button {
+    background-color: #04413c;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #17c66e;
+  }
+
+  .register-form {
+    top: -30px; /* Ajustează această valoare pentru poziționare */
+    margin-top: 50px; /* Poți adăuga spațiu suplimentar de sus */
+  }
+  
+  input:hover, select:hover {
+    border: 1px solid #61dafb;
+    transition: border 0.3s;
+  }
+  .register-form {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .App-header h1 {
+  
+    margin-top: -80px; /* Distanță între titlu și restul conținutului */
+  }

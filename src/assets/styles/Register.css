@@ -1,0 +1,103 @@
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin-top: -150px;
+  padding: 0 20px; /* Asigură un spațiu lateral */
+  width: 100%; /* Ocupă întreaga lățime a viewport-ului */
+  overflow-x: hidden; /* Previne derularea orizontală */
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 150%; /* Formularul este mai lat decât containerul său */
+  max-width: 900px; /* Controlează dimensiunea maximă */
+  margin: 0 auto; /* Centrează formularul pe pagină */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 75px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+  box-sizing: border-box; /* Include padding și border în dimensiuni */
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Div-urile ocupă lățimea completă a containerului */
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #064635;
+  margin-bottom: 5px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-left: -45px;
+  width: 150%; 
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* Animație la interacțiune */
+  align-items: center;
+  
+}
+
+input:focus, select:focus {
+  border-color: #17c66e;
+  box-shadow: 0 0 8px rgba(23, 198, 110, 0.3);
+  outline: none;
+}
+
+button {
+  background-color: #04413c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Butonul ocupă lățimea formularului */
+  align-items: center;
+  margin-right: -15px;
+}
+
+button:hover {
+  background-color: #17c66e;
+  transform: translateY(-2px);
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #eaf5f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden; /* Previne derularea orizontală */
+}
+
+.register-form {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

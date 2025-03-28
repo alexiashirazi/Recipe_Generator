@@ -1,0 +1,102 @@
+.recipes-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asigură distribuția spațială */
+    height: 200px; /* Înălțime fixă pentru alinierea butoanelor */
+  }
+  
+  .recipe-card h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-card p {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: auto; /* Spațiere flexibilă între descriere și buton */
+  }
+  
+  .view-button {
+    background-color: #004d26;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%; /* Asigură că toate butoanele sunt egale */
+  }
+  
+  .view-button:hover {
+    background-color: #00381b;
+  }
+  /* Container to center the content and reduce overall width */
+.recipes-container {
+  max-width: 600px; /* Reduce the overall width */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Grid layout adjustments */
+.recipes-grid {
+  display: flex;
+  gap: 15px; /* Reduce spacing between cards */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Individual recipe card */
+.recipe-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 200px; /* Make the cards smaller */
+  text-align: center;
+  padding: 15px; /* Reduce padding */
+  font-size: 0.9rem; /* Decrease font size */
+  transition: all 0.3s ease;
+}
+
+/* Reduce the size of the image inside the card */
+.recipe-image {
+  width: 100%;
+  height: 100px; /* Smaller image size */
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Recipe title styling */
+.recipe-title {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .recipes-container {
+    max-width: 100%;  /* Full width on smaller screens */
+  }
+
+  .recipes-grid {
+    flex-direction: column;  /* Stack items vertically on small screens */
+    align-items: center;
+  }
+
+  .recipe-card {
+    max-width: 100%;
+  }
+}
